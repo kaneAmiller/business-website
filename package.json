@@ -1,0 +1,33 @@
+{
+  "name": "my-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-spring/three": "^9.7.5",
+    "@react-three/drei": "^9.115.0",
+    "@react-three/fiber": "^8.17.10",
+    "next": "^15.0.2-canary.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-google-recaptcha": "^3.1.0",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/tailwindcss": "^3.0.11",
+    "autoprefixer": "10.2",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.1",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^2.2.19",
+    "typescript": "^5"
+  }
+}

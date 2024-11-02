@@ -1,0 +1,326 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root Variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-color: #001f5b;
+  --secondary-color: #33415c;
+  --highlight-color: #ffd700;
+}
+
+/* Base Styles */
+html,
+:host {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+  font-size: 1.1rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centers content vertically within the header */
+  padding: 20px 40px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-bottom: 3px solid #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 2.8rem;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 16px; /* Adjust spacing between logo and title */
+}
+
+/* Navigation Styling */
+.site-navigation {
+  background-color: var(--primary-color);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.site-navigation .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.site-navigation .nav-list li a {
+  font-size: 1.4rem;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s, border-bottom 0.3s;
+  border-radius: 8px;
+}
+
+.site-navigation .nav-list li a:hover,
+.site-navigation .nav-list li a:focus {
+  color: #000000;
+  background-color: #ffffff;
+  border-bottom: 3px solid #000000;
+}
+
+/* Sort Button Styling */
+.sort-button {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sort-button:hover {
+  background-color: var(--primary-color);
+}
+
+/* Project Styling */
+.project {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.project-info {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.expanded-details {
+  padding-top: 10px;
+}
+
+/* Section and Content Styling */
+.section-body, .section-content {
+  font-size: 1.1rem;
+  color: var(--foreground);
+  line-height: 1.8;
+}
+
+.section-container {
+  margin: 40px 0;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: #000000;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Services Page Styling */
+.services-page .service-text {
+  border: 2px solid var(--secondary-color);
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  background-color: #f1f5f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.services-page .service-text:hover {
+  border-color: var(--highlight-color);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styling */
+.site-footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 40px 0;
+  border-top: 3px solid #495057;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.footer-text a {
+  color: var(--highlight-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-icon, .footer-logo {
+  transition: transform 0.3s;
+}
+
+.footer-icon:hover, .footer-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  z-index: 1000; /* Lower z-index so it goes behind the navigation */
+  background-color: #000000; /* Black background */
+  padding: 8px; /* Original padding */
+  border-radius: 6px; /* Rounds the corners of the background */
+  margin-left: 10px; /* Adds space between the hamburger and adjacent elements */
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #ffffff;
+  transition: 0.4s;
+}
+
+/* Overlay for shadow effect */
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 900; /* Place below the side navigation */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show overlay when navigation is open */
+.site-navigation.open ~ .overlay {
+  display: block;
+  opacity: 1;
+}
+
+/* Responsive Design: Show Hamburger on Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .site-header {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .site-title {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .site-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1001; /* Higher z-index to cover the hamburger menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .site-navigation.open {
+    transform: translateX(0);
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list li a {
+    display: block;
+    padding: 1rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}
