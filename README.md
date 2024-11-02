@@ -1,6 +1,6 @@
 # KM Project Solutions Website
 
-This repository contains the code for the KM Project Solutions business website. KM Project Solutions offers services in IT support, project management, and web development to empower small businesses.
+This repository contains the code for the [KM Project Solutions](https://www.kmprojectsolutions.com/) business website. KM Project Solutions offers services in IT support, project management, and web development to empower small businesses.
 
 ## Table of Contents
 
