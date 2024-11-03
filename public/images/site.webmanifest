@@ -16,6 +16,6 @@
   "theme_color": "#001f5b",
   "background_color": "#ffffff",
   "display": "standalone",
-  "start_url": "/index.html",
+  "start_url": "https://www.kmprojectsolutions.com/",
   "scope": "/"
 }
