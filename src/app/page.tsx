@@ -160,7 +160,7 @@ export default function Home() {
         <section className="cta-section text-center mt-12 p-8" aria-label="Call to action">
           <h2 className="text-3xl font-semibold mb-4">Let's Bring Your Ideas to Life</h2>
           <p className="text-lg mb-6">
-            Ready to take your business to the next level? <Link href="/contact">Contact us</Link> to discuss how KM Project Solutions LLC can help transform your vision into reality.
+            Ready to take your business to the next level? Contact us to discuss how KM Project Solutions LLC can help transform your vision into reality.
           </p>
           <Link href="/contact" className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700">
             Get in Touch
