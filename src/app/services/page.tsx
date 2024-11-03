@@ -13,6 +13,25 @@ interface Service {
 
 const services: Service[] = [
   {
+    title: "Computer Repair & Maintenance",
+    description:
+      "Offering professional computer repair and maintenance services to keep your systems reliable and efficient. Our solutions help reduce downtime and improve operational stability.",
+    items: [
+      {
+        title: "Hardware & Software Troubleshooting",
+        description: "Quick diagnosis and resolution of issues to ensure your systems run smoothly.",
+      },
+      {
+        title: "System Optimization & Updates",
+        description: "Routine maintenance and updates to keep your systems secure and efficient.",
+      },
+      {
+        title: "Data Backup & Recovery",
+        description: "Ensuring data protection and providing solutions for data recovery in case of loss.",
+      },
+    ],
+  },
+  {
     title: "IT Support for Small Businesses",
     description:
       "Providing essential IT support to keep your operations running smoothly. We handle troubleshooting, system maintenance, and offer scalable solutions tailored to your business needs.",
@@ -69,6 +88,44 @@ const services: Service[] = [
       },
     ],
   },
+  {
+    title: "Backup and Disaster Recovery Solutions",
+    description:
+      "Protect your business data and ensure continuity with robust backup and disaster recovery plans.",
+    items: [
+      {
+        title: "Automated Backups",
+        description: "Regular, automatic backups to safeguard critical data.",
+      },
+      {
+        title: "Disaster Recovery Planning",
+        description: "Comprehensive plans to recover data and systems quickly after a disruption.",
+      },
+      {
+        title: "Data Restoration Services",
+        description: "Fast data recovery to minimize business interruption in case of data loss.",
+      },
+    ],
+  },
+  {
+    title: "Business Process Optimization",
+    description:
+      "Streamline operations to boost productivity and reduce costs with tailored process optimization strategies.",
+    items: [
+      {
+        title: "Workflow Analysis",
+        description: "Identifying and optimizing inefficient processes for smoother operations.",
+      },
+      {
+        title: "Time Management Tools",
+        description: "Implementing tools to enhance productivity and efficiency.",
+      },
+      {
+        title: "Resource Optimization",
+        description: "Effective resource management to maximize output and minimize waste.",
+      },
+    ],
+  },
 ];
 
 const Services: FC = () => {
@@ -77,10 +134,10 @@ const Services: FC = () => {
       {/* SEO Metadata */}
       <Head>
         <title>Services | KM Project Solutions</title>
-        <meta name="description" content="Explore the range of services offered by KM Project Solutions, including IT support, project management, and web development for small businesses." />
-        <meta name="keywords" content="KM Project Solutions, IT support, project management, web development, small business services" />
+        <meta name="description" content="Explore the range of services offered by KM Project Solutions, including computer repair, IT support, project management, web development, and more for small businesses in Kingston, NH." />
+        <meta name="keywords" content="KM Project Solutions, computer repair, IT support, project management, web development, tech maintenance, backup solutions, business optimization, Kingston NH" />
         <meta property="og:title" content="Services | KM Project Solutions" />
-        <meta property="og:description" content="Empowering small businesses with essential IT, project management, and web development services to achieve tech-driven goals." />
+        <meta property="og:description" content="Empowering small businesses with essential computer repair, IT support, project management, web development, and more services to achieve tech-driven goals." />
         <meta property="og:image" content="/images/services_bg.png" />
         <meta property="og:url" content="https://www.kmprojectsolutions.com/services" />
         <meta name="robots" content="index, follow" />
@@ -107,7 +164,7 @@ const Services: FC = () => {
             <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg max-w-xl text-center">
               <h1 className="text-5xl font-bold mb-4">Our Services</h1>
               <p className="text-lg">
-                Empowering small businesses with essential IT, project management, and web development services to help you achieve your technology-driven goals.
+                Empowering small businesses with essential computer repair, IT support, project management, web development, and more to help you achieve your technology-driven goals.
               </p>
             </div>
           </div>
