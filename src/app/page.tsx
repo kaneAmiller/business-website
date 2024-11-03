@@ -11,36 +11,56 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* SEO Metadata */}
       <Head>
-        <title>KM Project Solutions | IT, Project Management, and Web Development</title>
-        <meta name="description" content="Supporting small businesses with impactful IT solutions, project management, and web development services to drive success." />
-        <meta name="keywords" content="IT support, project management, web development, KM Project Solutions, small business solutions" />
-        <meta property="og:title" content="KM Project Solutions | Where Ideas Become Reality" />
-        <meta property="og:description" content="Supporting small businesses with impactful IT, project management, and web development services that drive success." />
+        <title>KM Project Solutions | IT, Project Management, & Web Development for Small Businesses</title>
+        <meta name="description" content="KM Project Solutions LLC provides small businesses with expert IT support, comprehensive project management, and custom web development solutions to help businesses succeed." />
+        <meta name="keywords" content="KM Project Solutions, Kane Miller, KM, IT consulting, small business IT support, project management for small businesses, web development services, IT solutions, Kane, business solutions, digital services, project execution, small business technology, website design, NH" />
+        
+        {/* Open Graph Metadata for Social Media Sharing */}
+        <meta property="og:title" content="KM Project Solutions | IT, Project Management, and Web Development Services" />
+        <meta property="og:description" content="Providing impactful IT support, project management, and web development services tailored to help small businesses succeed." />
         <meta property="og:image" content="/images/home_bg.jpg" />
         <meta property="og:url" content="https://www.kmprojectsolutions.com" />
+        
+        {/* Robots Tag to Guide Search Engine Crawling */}
         <meta name="robots" content="index, follow" />
 
-        {/* Structured Data for Organization Schema */}
+        {/* Structured Data for Organization and LocalBusiness Schema */}
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
-              "@type": "Organization",
+              "@type": "LocalBusiness",
               "name": "KM Project Solutions LLC",
               "url": "https://www.kmprojectsolutions.com",
               "logo": "https://www.kmprojectsolutions.com/images/primary-logo.png",
-              "sameAs": [
-                "https://linkedin.com/company/km-project-solutions-llc",
-                "https://github.com/kaneAmiller",
-                "https://instagram.com/kmprojectsolutions",
-                "https://www.kmprojectsolutions.com"
-              ],
+              "image": "https://www.kmprojectsolutions.com/images/home_bg.jpg",
+              "description": "KM Project Solutions LLC provides IT support, project management, and web development for small businesses, driving success through tailored solutions.",
+              "telephone": "+1-603-275-4036",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Your Street Address",
+                "addressLocality": "Kingston",
+                "addressRegion": "NH",
+                "postalCode": "03848",
+                "addressCountry": "US"
+              },
               "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+1-603-275-4036",
                 "contactType": "Customer Service",
                 "areaServed": "US"
-              }
+              },
+              "sameAs": [
+                "https://linkedin.com/company/km-project-solutions-llc",
+                "https://github.com/kaneAmiller",
+                "https://instagram.com/kmprojectsolutions"
+              ],
+              "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
+              "areaServed": {
+                "@type": "Place",
+                "name": "United States"
+              },
+              "keywords": ["KM Project Solutions", "Kane Miller", "KM", "IT support", "project management", "web development", "business technology", "small business consulting", "digital transformation", "IT solutions", "Kane", "NH web development", "project planning"]
             }
           `}
         </script>

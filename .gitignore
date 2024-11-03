@@ -1,3 +1,20 @@
+# Node modules
 node_modules/
+
+# Next.js build output
+.next/
 out/
+
+# Ignore Vercel deployment configuration
 .vercel/
+
+# macOS system files
+.DS_Store
+
+# Ignore lock files
+yarn.lock
+package-lock.json
+
+# Public folder sitemaps and robots.txt (if generated dynamically)
+public/sitemap*.xml
+public/robots.txt
