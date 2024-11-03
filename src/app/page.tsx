@@ -13,6 +13,7 @@ export default function Home() {
       <Head>
         <title>KM Project Solutions | IT, Project Management, & Web Development for Small Businesses</title>
         <meta name="description" content="KM Project Solutions LLC provides small businesses with expert IT support, comprehensive project management, and custom web development solutions to help businesses succeed." />
+        <link rel="canonical" href="https://www.kmprojectsolutions.com/" />
         <meta name="keywords" content="KM Project Solutions, Kane Miller, KM, IT consulting, small business IT support, project management for small businesses, web development services, IT solutions, Kane, business solutions, digital services, project execution, small business technology, website design, NH" />
         
         {/* Open Graph Metadata for Social Media Sharing */}
