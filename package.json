@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap && cp -f public/robots.txt out/robots.txt && cp -r public/sitemap*.xml out/"
+    "postbuild": "cp -f public/robots.txt out/robots.txt && cp -r public/sitemap*.xml out/"
   },
   "dependencies": {
     "@react-spring/three": "^9.7.5",
