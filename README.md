@@ -8,6 +8,7 @@ This repository contains the code for the [KM Project Solutions](https://www.kmp
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
+- [Update Steps](#update-steps)
 - [License](#license)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -22,6 +23,7 @@ KM Project Solutions provides tailored services in IT support, project managemen
 - **Service Showcase**: Details about IT support, project management, and web development services.
 - **Project Portfolio**: Highlights successful projects across various industries.
 - **Contact Form**: Allows potential clients to get in touch easily.
+- **Blog**: Regularly updated with articles on industry trends, tips, and project insights.
 
 ## Technologies Used
 
@@ -52,6 +54,39 @@ KM Project Solutions provides tailored services in IT support, project managemen
    ```bash
    npm run build
    ```
+
+## Update Steps
+
+To keep the project up-to-date with the latest dependencies, follow these steps:
+
+1. **Check for Outdated Packages**:
+   - Run the following command to list any outdated packages:
+     ```bash
+     npm outdated
+     ```
+   
+2. **Update Dependencies**:
+   - Update specific outdated packages:
+     ```bash
+     npm install <package-name>@latest
+     ```
+   - For packages with suggested replacements, install alternatives as specified. For example:
+     ```bash
+     npm install @eslint/config-array @eslint/object-schema
+     ```
+   
+3. **Optional Bulk Update**:
+   - For a bulk update to the latest versions, run:
+     ```bash
+     npm update
+     ```
+   - Note: This may introduce breaking changes, so review release notes as needed.
+
+4. **Re-Test the Project**:
+   - After updating, run the development server to confirm that everything works correctly:
+     ```bash
+     npm run dev
+     ```
 
 ## License
 
