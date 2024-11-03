@@ -1,4 +1,4 @@
-// File: /Users/kanemiller/business-website-main 2 copy/src/app/cookie-policy/page.tsx
+// File: /Users/kanemiller/business-website/src/app/cookie-policy/page.tsx
 import * as entry from '../../../../src/app/cookie-policy/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

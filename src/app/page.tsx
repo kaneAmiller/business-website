@@ -28,7 +28,7 @@ export default function Home() {
               "@type": "Organization",
               "name": "KM Project Solutions LLC",
               "url": "https://www.kmprojectsolutions.com",
-              "logo": "https://www.kmprojectsolutions.com/images/home_bg.jpg",
+              "logo": "https://www.kmprojectsolutions.com/images/primary-logo.png",
               "sameAs": [
                 "https://linkedin.com/company/km-project-solutions-llc",
                 "https://github.com/kaneAmiller",
@@ -60,8 +60,6 @@ export default function Home() {
             quality={85}
             priority
             style={{ objectFit: "cover" }}
-            placeholder="blur"
-            blurDataURL="/images/placeholder.jpg"
             className="absolute inset-0 w-full h-full -z-10"
           />
           

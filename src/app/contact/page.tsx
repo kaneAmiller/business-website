@@ -164,6 +164,13 @@ export default function ContactPage() {
           ref={recaptchaRef}
           onChange={onReCAPTCHAChange}
         />
+
+        {/* reCAPTCHA Notice */}
+        <p className="text-center mt-4 text-sm">
+          This site is protected by reCAPTCHA and the Google 
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"> Privacy Policy</a> and 
+          <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"> Terms of Service</a> apply.
+        </p>
       </main>
 
       {/* Footer Component */}
