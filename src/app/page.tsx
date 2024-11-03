@@ -162,6 +162,9 @@ export default function Home() {
           <p className="text-lg mb-6">
             Ready to take your business to the next level? <Link href="/contact">Contact us</Link> to discuss how KM Project Solutions LLC can help transform your vision into reality.
           </p>
+          <Link href="/contact" className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700">
+            Get in Touch
+          </Link>
         </section>
       </main>
 
