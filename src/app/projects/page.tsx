@@ -262,6 +262,55 @@ const projects: Project[] = [
       'Enhanced restaurant security and improved staff awareness of security protocols.',
     ],
   },
+  {
+    id: 11,
+    position: [4, 4, 0],
+    title: 'Arcade Machine using Raspberry Pi 4 and Anbernic RG351V',
+    organization: 'Personal Project',
+    industry: 'Gaming Technology',
+    startDate: '2023-06-01',
+    endDate: '2023-07-01',
+    processGroupBreakdown: [
+      { group: 'Initiating', percentage: '10%' },
+      { group: 'Planning', percentage: '30%' },
+      { group: 'Executing', percentage: '40%' },
+      { group: 'Monitoring and Controlling', percentage: '10%' },
+      { group: 'Closing', percentage: '10%' },
+    ],
+    description: 'Built a custom arcade machine using a Raspberry Pi 4 and Anbernic RG351V to run classic games.',
+    keyActions: [
+      'Researched emulator software and compatible hardware.',
+      'Configured the Raspberry Pi and Anbernic RG351V for optimal gaming performance.',
+    ],
+    keyDeliverables: [
+      'Successfully created a functional arcade machine with a collection of classic games.',
+    ],
+  },
+  {
+    id: 12,
+    position: [-4, 4, 0],
+    title: 'Asana Integration Project',
+    organization: 'KM Project Solutions LLC',
+    industry: 'Project Management Automation',
+    startDate: '2024-10-01',
+    endDate: '2024-11-01',
+    processGroupBreakdown: [
+      { group: 'Initiating', percentage: '10%' },
+      { group: 'Planning', percentage: '20%' },
+      { group: 'Executing', percentage: '50%' },
+      { group: 'Monitoring and Controlling', percentage: '10%' },
+      { group: 'Closing', percentage: '10%' },
+    ],
+    description: 'Developed an integration with Asana’s API to fetch project and task data, with export options in multiple formats.',
+    keyActions: [
+      'Implemented error handling and unit tests for reliability.',
+      'Developed functions for exporting documents in PDF, Markdown, and HTML formats.',
+    ],
+    keyDeliverables: [
+      'Enhanced project reporting capabilities with Asana integration and custom templates for exporting.',
+    ],
+  }
+  
 ];
 
 // Get unique industries from projects
