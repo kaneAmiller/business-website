@@ -1,5 +1,13 @@
 # KM Project Solutions Website
 
+![Status](https://img.shields.io/badge/status-live-brightgreen)
+![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-orange)
+![Made with Next.js](https://img.shields.io/badge/Next.js-v13.0-lightgrey)
+![Hosted on Cloudflare Pages](https://img.shields.io/badge/hosting-Cloudflare%20Pages-orange)
+![SEO Optimized](https://img.shields.io/badge/SEO-Optimized-brightgreen)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-blue)
+
 This repository contains the code for the [KM Project Solutions](https://www.kmprojectsolutions.com/) website. KM Project Solutions provides specialized services in IT support, project management, and web development for small businesses.
 
 ## Table of Contents
