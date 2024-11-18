@@ -8,7 +8,6 @@
   --foreground: #171717;
   --primary-color: #001f5b;
   --secondary-color: #33415c;
-  --highlight-color: #ffd700;
 }
 
 /* Base Styles */
@@ -35,11 +34,51 @@ body {
   box-sizing: border-box;
 }
 
+/* Blog-specific Grid Alignment */
+.blog-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  justify-content: center;
+}
+
+.blog-card {
+  max-width: 350px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/* Anchor Tag Styling */
+a {
+  color: var(--primary-color); 
+  text-decoration: underline; 
+  cursor: pointer; 
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--highlight-color); 
+}
+
+/* Specific to services page */
+.services-page a {
+  font-weight: bold; 
+}
+
 /* Header Styles */
 .site-header {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centers content vertically within the header */
+  align-items: center; 
   padding: 20px 40px;
   background-color: var(--primary-color);
   color: #ffffff;
@@ -59,7 +98,7 @@ body {
   letter-spacing: 1.5px;
   font-weight: bold;
   color: #ffffff;
-  margin-left: 16px; /* Adjust spacing between logo and title */
+  margin-left: 16px; 
 }
 
 /* Navigation Styling */
