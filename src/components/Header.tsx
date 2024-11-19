@@ -12,7 +12,6 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-  // Close menu on outside click
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(event.target as Node)) {
@@ -23,22 +22,32 @@ const Header = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Close menu when any link is clicked
   const handleLinkClick = () => {
     setIsOpen(false);
   };
 
   return (
-    <header className="site-header relative">
-      <div className="flex items-center">
+    <header className="site-header relative flex items-center">
+      {/* Logo */}
+      <div className="logo">
         <Image 
           src="/images/secondary-logo.png" 
           alt="KM Project Solutions Logo" 
           width={90}
           height={60}
         />
-        <h1 className="site-title ml-4">KM Project Solutions</h1>
       </div>
+
+      {/* Title */}
+      <h1 className="site-title">KM Project Solutions</h1>
+
+      {/* Hamburger */}
+      <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
+
       <nav className={`site-navigation ${isOpen ? 'open' : ''}`} ref={navRef}>
         <ul className="nav-list">
           <li><Link href="/" onClick={handleLinkClick}>Home</Link></li>
@@ -49,11 +58,7 @@ const Header = () => {
           <li><Link href="/contact" onClick={handleLinkClick}>Contact</Link></li>
         </ul>
       </nav>
-      <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </button>
+
       {isOpen && <div className="overlay" onClick={() => setIsOpen(false)}></div>}
     </header>
   );
