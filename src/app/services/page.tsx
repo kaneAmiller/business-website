@@ -75,6 +75,14 @@ const packages: Package[] = [
       "Video uploads up to 500GB",
     ],
   },
+  {
+    title: "Hourly Rates",
+    price: "$75/hour - IT Support\n$100/hour - Custom Consulting",
+    description: "Need something unique?",
+    items: [
+      `<a href="/contact" class="text-blue-600 font-bold underline hover:text-blue-800">Contact us</a> for a custom package tailored to your business.`,
+    ],
+  },
 ];
 
 const Services: FC = () => {
@@ -129,56 +137,30 @@ const Services: FC = () => {
         </div>
 
         {/* Packages Content */}
-        <section className="space-y-16 mt-12 p-8 text-center">
+        <section className="space-y-8 mt-12 p-8 text-center">
           {packages.map((pkg) => (
             <div
               key={pkg.title}
               className="package-category max-w-3xl mx-auto bg-gray-100 p-6 rounded-lg shadow-lg"
             >
               <h2 className="text-3xl font-semibold mb-2">{pkg.title}</h2>
-              <p className="text-xl font-bold mb-2">{pkg.price}</p>
+              <p className="text-xl font-bold whitespace-pre-line mb-2">
+                {pkg.price}
+              </p>
               <p className="package-description mb-4 text-lg">
                 {pkg.description}
               </p>
               <ul className="list-none space-y-2">
                 {pkg.items.map((item, index) => (
-                  <li key={index} className="text-base">
-                    • {item}
-                  </li>
+                  <li
+                    key={index}
+                    className="text-base"
+                    dangerouslySetInnerHTML={{ __html: item }}
+                  />
                 ))}
               </ul>
             </div>
           ))}
-        </section>
-
-        {/* Hourly Rates Section */}
-        <section className="mt-12 p-8 text-center">
-          <div className="max-w-3xl mx-auto bg-gray-100 p-6 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-semibold mb-4">Hourly Rates</h2>
-
-            <div className="mb-4">
-              <p className="text-xl font-bold">
-                $75/hour <span className="text-lg font-normal">- IT Support</span>
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <p className="text-xl font-bold">
-                $100/hour <span className="text-lg font-normal">- Custom Consulting</span>
-              </p>
-            </div>
-
-            <p className="text-lg mt-4">
-              Need something unique?{" "}
-              <a
-                href="/contact"
-                className="text-blue-600 font-bold underline hover:text-blue-800"
-              >
-                Contact us
-              </a>{" "}
-              for a custom package tailored to your business.
-            </p>
-          </div>
         </section>
       </main>
 
