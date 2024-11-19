@@ -330,24 +330,34 @@ h2 {
   opacity: 1;
 }
 
-/* Responsive Design: Show Hamburger on Mobile */
 @media (max-width: 768px) {
-  .hamburger {
+  .site-header {
     display: flex;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center; /* Center everything horizontally */
+    padding: 10px 20px;
+    position: relative;
   }
 
-  .site-header {
-    flex-direction: column;
-    padding: 15px 20px;
+  .logo {
+    max-height: 40px;
+    margin-right: auto; /* Pushes logo to the far left */
   }
 
   .site-title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     line-height: 1.2;
+    text-align: center;
+    flex-shrink: 1; /* Ensures title doesn't overflow */
+    margin: 0 auto; /* Center title between logo and burger */
+    max-width: 60%; /* Prevents title from taking up too much space */
+  }
+
+  .hamburger {
+    display: flex;
+    position: relative;
+    margin-left: auto; /* Push hamburger to the far right */
+    top: 0;
   }
 
   .site-navigation {
@@ -356,12 +366,10 @@ h2 {
     right: 0;
     height: 100%;
     width: 250px;
-    flex-direction: column;
     background-color: var(--primary-color);
     transform: translateX(100%);
     transition: transform 0.3s ease;
-    z-index: 1001; /* Higher z-index to cover the hamburger menu */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
   }
 
   .site-navigation.open {
@@ -373,11 +381,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
-  }
-
-  .nav-list li {
-    width: 100%;
-    text-align: center;
   }
 
   .nav-list li a {
